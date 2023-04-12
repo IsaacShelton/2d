@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{name}}</title>
+    <style>
+        html,
+        body,
+        canvas {
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: absolute;
+            background: black;
+            z-index: 0;
+        }
+
+        canvas:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="glcanvas" tabindex='1'></canvas>
+    <!-- https://github.com/not-fl3/macroquad/tree/master/js -->
+    <script src="./mq.min.js"></script>
+    <script>load("./target/wasm32-unknown-unknown/release/name.wasm");</script> <!-- Your compiled wasm file -->
+</body>
+
+</html>
