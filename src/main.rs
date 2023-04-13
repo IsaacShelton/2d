@@ -12,7 +12,7 @@ mod update;
 fn get_macroquad_config() -> Conf {
     Conf {
         window_title: "{{name}}".into(),
-        // fullscreen: true,
+        fullscreen: true,
         ..Default::default()
     }
 }
@@ -27,6 +27,6 @@ async fn main() {
 
         update(&textures, &mut gamedata);
         draw(&textures, &gamedata);
-        next_frame().await
+        next_frame().await;
     }
 }
