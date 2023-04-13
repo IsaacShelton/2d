@@ -11,7 +11,7 @@ mod update;
 
 fn get_macroquad_config() -> Conf {
     Conf {
-        window_title: "{{name}}".into(),
+        window_title: "{{project-name}}".into(),
         fullscreen: true,
         ..Default::default()
     }

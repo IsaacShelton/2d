@@ -2,5 +2,4 @@
 cargo_generate_version = ">=0.9.0"
 
 [placeholders]
-name = { type="string", prompt="Name?" }
 description = { type="string", prompt="Description?" }
